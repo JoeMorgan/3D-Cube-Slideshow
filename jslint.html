@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<link href="css/main.css" media="screen" rel="stylesheet" />		
+		<link href="css/hl-style.css" media="screen" rel="stylesheet" />		
+		<meta charset="utf-8" />	
+		<meta content="" name="keywords"/>
+		<meta content="" name="description"/>	
+		<title>Convention, Style &amp; Quality: Using JSLint</title>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />	
+		<script src="js/modernizr.js"></script>	
+		<script>
+			Modernizr.load([
+				{
+					"load": ["js/jquery-1.6.4.min.js", "js/sylvester.js", "js/hl-all.js", "js/main.js"]
+				}
+			]);
+			
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>SapientNitro</h1>
+		</header>
+		
+		
+		<div class="viewport">
+			<div>
+				
+				<!-- Used as overlay to hold cube content (only way to beat a webkit bug) -->
+				<div class="screen"></div>
+				
+				<ul class="cubes">
+					<li>
+						<section class="front">
+							<h1>Conventions, <b>Style</b> <br /> &amp; Quality: <strong>Using JSLint</strong></h1>
+							
+							<p>	
+								<small>Joe Morgan, 2011</small>
+							</p>							
+							
+	 						<a class="arrow s-right s-next" data-action="rotateRight" href=""></a>
+						</section>	
+								
+						<section class="right">
+							<h1>Who I am</h1>
+
+							<div class="staged-content">
+								<img alt="Joe Morgan" height="453" src="images/me.jpg" width="604" />
+							</div>
+
+							<a class="arrow s-left s-prev" data-action="rotateLeft" href=""></a>
+							<a class="arrow s-up s-next" data-action="rotateForward" href=""></a>
+						</section>			
+								
+						<section class="top">
+							<h1>Who I'm not</h1>
+							<div class="staged-content">
+								<img alt="Doug Crockford, Brenden Eich, Paul Irish, and Rob Larsen" height="400" src="images/js-guys.jpg" width="400" />
+							</div>
+
+							<a class="arrow s-down s-prev" data-action="rotateBack" href=""></a>
+							<a class="arrow s-right s-next" data-action="rotateRight" href=""></a>							
+						</section>		
+						
+						<section class="back">
+							<h1>Conventions</h1>
+							
+							<p class="reveal">
+								Rules for <strong>better code</strong>								
+							</p>
+							
+							<ul class="bulleted-list reveal">
+								<li>
+									<b>Resilience</b>
+								</li>
+								<li class="reveal">
+									Performance
+								</li>
+								<li class="reveal">
+									Security
+								</li>
+								<li class="reveal">
+									Readability
+								</li>
+							</ul>
+
+							
+							<a class="arrow s-left s-prev" data-action="rotateLeft" href=""></a>
+							<a class="arrow s-up s-next" data-action="rotateForward" href=""></a>								
+						</section>	
+								
+						<section class="left">
+							<h1>Examples</h1>							
+							
+							<ul class="bulleted-list link-list">
+								<li>
+									<a class="static-modal" href="" title="More examples, with code">"Problematic" code<b class="reveal"> #nerdfights</b><span></span></a>
+									<div class="modal-contents">
+										<div class="staged-content">
+											<ul class="code-modal">
+												<li>
+													<h2>Getting cute with expressions</h2>
+<pre class="js" name="code">this.settings.unhighlight &amp;&amp; this.settings.unhighlight.call(this, element);</pre>
+<pre class="js" name="code">this.settings.showErrors
+	? this.settings.showErrors.call(this, this.errorMap)
+	: this.defaultShowErrors();</pre>
+												</li>
+												<li class="modal-reveal">
+													<h2>Curly Controversy</h2>
+<pre class="js" name="code">if($.fn.resetForm) $(this.currentForm).resetForm();</pre>
+<pre class="js" name="code">function isHidden(objRef)
+{
+	return
+	{
+		objRef.hidden;	
+	}
+}</pre>
+												</li>
+												<li class="modal-reveal">
+													<h2>JavaScript: The Bad Parts</h2>
+<pre class="js" name="code">var propVal = eval("var result = obj." + propname);</pre>
+
+<pre class="js" name="code">with(obj){
+	foo = bar;
+}</pre>
+												</li>
+												<li class="modal-reveal">													
+<pre class="js" name="code">// obj.foo = bar;
+// obj.foo = obj.bar;
+// foo = bar;
+// foo = obj.bar;
+
+// *Crockford on JavaScript - Section 8: Programming Style &amp; Your Brain</pre>
+												</li>
+												<li class="modal-reveal">
+													<h2>Trouble with Variables</h2>
+<pre class="js" name="code">var name = "Dan";
+function getName(){
+	console.log(name);
+	var name = "Paul";
+	return name;
+}
+newName = getName();</pre>
+												</li>
+											</ul>
+										</div>										
+									</div>									
+								</li>
+								<li class="reveal">
+									<a class="iframed" href="http://javascript.crockford.com/code.html" title="Crockford's code conventions">Crockford's conventions<span></span></a>
+								</li>
+								<li class="reveal">
+									<a class="iframed" href="https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml" title="Google's style guide">Google's style guide<span></span></a>
+								</li>
+							</ul>							
+							
+							<a class="arrow s-down s-prev" data-action="rotateBack" href=""></a>
+							<a class="arrow s-right s-next" data-action="rotateRight" href=""></a>								
+						</section>	
+							
+						<section class="bottom">
+							<h1>Style</h1>
+							
+							<p class="de-emphasized">
+								Personal expression
+							</p>
+							
+							<p class="reveal">
+								<strong>No</strong>
+							</p>
+							
+							<ul class="bulleted-list reveal">
+								<li>
+									<strong>Individual or Group</strong>
+								</li>
+							</ul>
+							<p class="reveal">
+								<em>Consistency</em> 
+							</p>
+							
+							<a class="arrow s-left s-prev" data-action="rotateLeft" href=""></a>
+						</section>			
+					</li>
+					<li>
+						<section class="front">
+							<h1>Conformance</h1>
+							
+							<ul class="bulleted-list">
+								<li>
+									Keeping track
+								</li>
+								<li class="reveal">
+									Other devs
+								</li>
+							</ul>
+							
+							<p class="reveal">
+								Tools: <b>JSLint,</b> <strong>JSHint,</strong> Closure Linter
+							</p>
+							
+	 						<a class="arrow s-right s-next" data-action="rotateRight" href=""></a>
+						</section>	
+								
+						<section class="right">
+							<h1>JSLint</h1>								
+							
+							<blockquote class="reveal">
+								"...a tool that makes sure you write your code like Douglas Crockford."
+								<cite>Anton Kovalyov, JSHint</cite>
+							</blockquote>
+							
+							<blockquote class="reveal">
+								"JSLint can suck it."
+								<cite>Brenden Eich, creator of JavaScript</cite>
+							</blockquote>
+
+							<a class="arrow s-left s-prev" data-action="rotateLeft" href=""></a>
+							<a class="arrow s-up s-next" data-action="rotateForward" href=""></a>
+						</section>			
+								
+						<section class="top">
+							<h1>JSHint</h1>							
+							
+							<div class="staged-content">
+								<blockquote class="reveal">
+									"There are many stupid people in this world, and now there is a tool for them." 
+									<cite>Douglas Crockford, hurting feelings since 2002</cite>
+								</blockquote>
+							</div>
+
+							<a class="arrow s-down s-prev" data-action="rotateBack" href=""></a>
+							<a class="arrow s-right s-next" data-action="rotateRight" href=""></a>							
+						</section>		
+						
+						<section class="back">
+							<h1>Usage</h1>						
+
+							<ul class="bulleted-list">
+								<li>
+									Online 
+									<small>(<a class="iframed" href="http://www.jslint.com/" title="JSLint">JSLint</a> and
+									<a class="iframed" href="http://www.jshint.com/" title="JSHint">JSHint</a>)</small>
+								</li>
+								<li>
+									CLI (manual)
+								</li>
+								<li>
+									Build process
+									<ul class="reveal">
+										<li>
+											HTML5 Boilerplate
+										</li>
+									</ul>
+								</li>
+							</ul>
+											
+							<a class="arrow s-left s-prev" data-action="rotateLeft" href=""></a>
+							<a class="arrow s-up s-next" data-action="rotateForward" href=""></a>								
+						</section>	
+								
+						<section class="left">
+							<h1>IDE support</h1>						
+							
+							<p class="breaky">
+								<span>AptanaStudio3</span>Vim<span>Emacs</span>SublimeText2<span>TextMate</span>VisualStudio<span>ShiftEdit</span>Komodo
+							</p>
+
+
+							<a class="arrow s-down s-prev" data-action="rotateBack" href=""></a>
+							<a class="arrow s-right s-next" data-action="rotateRight" href=""></a>								
+						</section>	
+							
+						<section class="bottom">
+							<h1>In Closing</h1>
+
+							<ul class="bulleted-list">
+								<li>
+									Follow conventions
+								</li>
+								<li>
+									Be consistent
+								</li>
+								<li>
+									Use a linter
+								</li>
+							</ul>
+														
+							<p class="reveal">
+								<b>We can write better code</b>
+							</p>
+
+							<a class="arrow s-left s-prev" data-action="rotateLeft" href=""></a>
+						</section>			
+					</li>
+					<li>
+						<section class="front">
+							<h1>Questions?</h1>
+
+							<div class="staged-content">
+								<img alt="Keyboard cat animated gif" class="reveal" height="233" src="images/keyboard-cat.gif" width="308" />
+							</div>
+						</section>						
+					</li>					
+				</ul>
+			</div>	
+		</div>
+		
+		
+		<div id="modal-overlay"></div>
+		<div id="iframe-modal" class="modal-window">
+			<iframe height="100%" seamless="seamless" src="" width="100%"></iframe>
+		</div>			
+		<div id="static-modal" class="modal-window"></div>			
+		
+	</body> 
+</html>	

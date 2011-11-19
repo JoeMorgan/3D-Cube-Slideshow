@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SapientSansBoldRegular';
+    src: url('spntsb-webfont.eot');
+    src: url('spntsb-webfont.eot?iefix') format('eot'),
+         url('spntsb-webfont.woff') format('woff'),
+         url('spntsb-webfont.ttf') format('truetype'),
+         url('spntsb-webfont.svg#webfontIEvjje2r') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
