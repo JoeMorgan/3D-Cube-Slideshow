@@ -25,9 +25,9 @@ Usage:
 The arrow links on each face can be used to navigate a slideshow. Keyboard controls are preferred, and
 can be used as follows:
 
-Space:				advance to next face (or next cube if on the last face of current cube)
-Delete:				return to previous face (or previous cube if on first face of current cube)
-Arrow keys:			rotate forward, backward, left, and right
-Home/End: 			rotate clockwise and counter-clockwise
+Space:			advance to next face (or next cube if on the last face of current cube)
+Delete:			return to previous face (or previous cube if on first face of current cube)
+Arrow keys:		rotate forward, backward, left, and right
+Home/End: 		rotate clockwise and counter-clockwise
 Page Up/Page Down:	next/previous cube
 Number keys (1-6):	rotate to numbered face of current cube
