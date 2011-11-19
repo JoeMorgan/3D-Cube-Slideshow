@@ -1,0 +1,33 @@
+CSS 3D Presentation Framework
+
+-----------------------------
+
+Intended for personal/limited use -- there are no current plans for support or feature additions at this time.
+Tested in latest Chrome and Safari only.
+
+-----------------------------
+
+Important Note: 
+
+Due to a webkit bug, matrix rotation of a cube construct sometimes causes loss of 
+interactivity with portions of each "face" of the cube (but strangely, not the entirety of a face).
+To get around this in the short term, I simply clone the contents of each face and apply them to a 
+"screen" element that sits in front of the cube-set.
+
+Many limitations of the presentation framework are a result of this hacky fix, so if anyone figures
+out how to prevent the loss of interactivity, be sure to do a pull request.
+
+
+-----------------------------
+
+Usage:
+
+The arrow links on each face can be used to navigate a slideshow. Keyboard controls are preferred, and
+can be used as follows:
+
+Space:				advance to next face (or next cube if on the last face of current cube)
+Delete:				return to previous face (or previous cube if on first face of current cube)
+Arrow keys:			rotate forward, backward, left, and right
+Home/End: 			rotate clockwise and counter-clockwise
+Page Up/Page Down:	next/previous cube
+Number keys (1-6):	rotate to numbered face of current cube
